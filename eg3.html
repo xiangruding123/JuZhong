@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+			}
+			/*============*/
+			.parent9 {
+				width: 400px;
+				height: 400px;
+				text-align: center;
+				background: magenta;
+			}
+			
+			.parent9 img {
+				width: 200px;
+				height: 200px;
+				vertical-align: middle;
+			}
+			
+			.parent9 span {
+				vertical-align: middle;
+				display: inline-block;
+				width: 0px;
+				height: 100%;
+			}
+			/*============*/
+			
+			#sec{
+				width: 100%;
+				height: auto;
+			}
+			#sec ul{
+				width: 100%;
+				height: 100%;
+			}
+			#sec ul li{
+				display: inline-block;
+				background: #666;
+				width: 25%;
+				height: 300px;
+				box-sizing: border-box;
+				padding: 2%;
+			}
+			
+			/*================*/
+			#section{
+				width: 100%;
+				height: 600px;
+			}
+			#section ul{
+				width: 100%;
+				height: 100%;
+			}
+			#section ul li{
+				float: left;      /*浮动去除标签间隙*/
+				display: inline-block;
+				background: #eee;
+				width: 25%;
+				height: 300px;
+				text-align: center;
+			}
+			#section ul li img{
+				border: 1px solid #000;
+				width: 200px;
+				height: 250px;
+				vertical-align: middle;
+			}
+			#section ul li span{
+				display: inline-block;
+				width: 0;
+				height: 100%;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="parent9">
+			<img src="img/jiang.JPEG"/><span></span>
+		</div>
+		<hr />
+		<p>display: inline-block;box-sizing: border-box;padding: 2%;</p>
+		<section id="sec">
+			<ul>
+				<li><img src="img/jiang.JPEG"/></li><li>
+					<img src="img/xu4.JPEG"/></li><li>
+						<img src="img/xu8.JPEG"/></li><li>
+							<img src="img/xud0.JPEG"/></li><li>
+								<img src="img/jiang.JPEG"/></li><li>
+					<img src="img/xu4.JPEG"/></li><li>
+						<img src="img/xu8.JPEG"/></li><li>
+							<img src="img/xud0.JPEG"/></li>
+			</ul>
+		</section>
+		<hr />
+		<section id="section">
+			<ul>
+				<li><img src="img/jiang.JPEG"/><span></span></li>
+				<li><img src="img/xu4.JPEG"/><span></span></li>
+				<li><img src="img/xu8.JPEG"/><span></span></li>
+				<li><img src="img/xud0.JPEG"/><span></span></li>
+				<li><img src="img/jiang.JPEG"/><span></span></li>
+				<li><img src="img/xu4.JPEG"/><span></span></li>
+				<li><img src="img/xu8.JPEG"/><span></span></li>
+				<li><img src="img/xud0.JPEG"/><span></span></li>
+			</ul>
+		</section>
+	</body>
+</html>

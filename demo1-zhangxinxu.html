@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>利用display: table-cell;实现水平居中</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			ul li {
+				list-style: none;
+			}
+			
+			.box li {
+				float: left;
+				margin-right: 13px;
+			}
+			
+			.box li div {
+				display: table-cell;
+				width: 500px;
+				height: 500px;
+				border: 1px solid #beceeb;
+				font-size: 118px;
+				text-align: center;
+				vertical-align: middle;
+			}
+			
+			.box li div img {
+				width: 300px;
+				height: 400px;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p>
+			<a target="_blank" href="http://www.zhangxinxu.com/study/200908/img-text-vertical-align.html#zhangxinxu">大小不固定的图片和多行文字的垂直水平居中</a>
+		</p>
+		<p>display: table-cell;text-align: center;vertical-align: middle;</p>
+
+		<ul class="box">
+			<li>
+				<div><img src="img/jiang.JPEG" /></div>
+				<div><img src="img/xu4.JPEG" /></div>
+				<div><img src="img/xu8.JPEG" /></div>
+				<div><img src="img/xud0.JPEG" /></div>
+			</li>
+		</ul>
+	</body>
+
+</html>

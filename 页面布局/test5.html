@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>负外边距法：negative-margin-element-center</title>
+		<style type="text/css">
+			.wrapper {
+				width: 750px;
+				position: relative;
+				left: 50%;
+				margin-left: -375px;
+			}
+			
+			.contentArea {
+				width: 450px;
+				position: absolute;
+				top: 0;
+				left: 150px;
+				height: 500px;
+				background: #96c;
+			}
+			
+			.leftPanel {
+				width: 150px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 500px;
+				background: #999;
+			}
+			
+			.rightPanel {
+				width: 150px;
+				position: absolute;
+				top: 0;
+				left: 600px;
+				height: 500px;
+				background: #06C;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="contentArea"></div>
+			<div class="leftPanel"></div>
+			<div class="rightPanel"></div>
+		</div>
+	</body>
+
+</html>
